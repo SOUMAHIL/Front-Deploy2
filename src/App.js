@@ -11,9 +11,8 @@ import Update from './Update';
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Routes>
-
+      <BrowserRouter basename="/app">
+        <Routes >
           <Route path='/' element={<Login />} ></Route>
           <Route path='/signup' element={<Signup/>}></Route>
           <Route path='/home' element={<Home/>}></Route>
