@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Login from './Login';
-import{BrowserRouter, Routes, Route} from 'react-router-dom';
+import{HashRouter, Routes, Route} from 'react-router-dom';
 import Signup from './Signup';
 import Home from './Home';
 import Add from './Add';
@@ -11,7 +11,7 @@ import Update from './Update';
 function App() {
   return (
     <div>
-      <BrowserRouter basename="/App">
+      <HashRouter >
         <Routes >
           <Route path='/' element={<Login />} ></Route>
           <Route path='/signup' element={<Signup/>}></Route>
@@ -21,7 +21,7 @@ function App() {
           <Route path='/update/:id' element={<Update/>}></Route>
           </Routes>
                                    
-      </BrowserRouter>
+      </HashRouter>
 
       
 
