@@ -13,7 +13,8 @@ function App() {
     <div>
       <HashRouter >
         <Routes >
-          
+          <Route path='/' element={<Login />} ></Route>
+          <Route path='/signup' element={<Signup/>}></Route>
           <Route path='/home' element={<Home/>}></Route>
           <Route path='/add' element={<Add/>}></Route>
           <Route path='/read/:id' element={<Read/>}></Route>
